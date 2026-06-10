@@ -1,48 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} — {{ site.title }}</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            max-width: 720px;
-            margin: 60px auto;
-            line-height: 1.65;
-        }
-        h1 {
-            font-weight: 600;
-            margin-bottom: 0;
-        }
-        h2 {
-            font-weight: 400;
-            color: #555;
-            margin-top: 5px;
-        }
-        p {
-            margin-top: 30px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
 </head>
+
 <body>
 
-<nav class="site-nav">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">Framework</a></li>
-    <li><a href="/structural/">Structural</a></li>
-    <li><a href="/service/">Service</a></li>
-    <li><a href="/surface/">Surface</a></li>
-  </ul>
-</nav>
+  {% include nav.html %}
 
-
-{{ content }}
+  <main>
+    {{ content }}
+  </main>
 
 </body>
 </html>
+
